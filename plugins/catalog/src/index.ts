@@ -22,3 +22,4 @@ export { useEntityCompoundName } from './components/useEntityCompoundName';
 export { EntityContext, useEntity } from './hooks/useEntity';
 export { catalogApiRef, plugin } from './plugin';
 export * from './routes';
+export { CatalogTable } from './components/CatalogTable/CatalogTable';

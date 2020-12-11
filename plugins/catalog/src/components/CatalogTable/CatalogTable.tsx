@@ -30,6 +30,9 @@ import {
   favouriteEntityTooltip,
 } from '../FavouriteEntity/FavouriteEntity';
 
+// TR TODO: Need to remove this when Ready
+// TR TODO: Need to create index page to export this and fix import in the base index
+// TR TODO: There may be more to do, but these todos are the next steps I would have taken
 const columns: TableColumn<Entity>[] = [
   {
     title: 'Name',
@@ -96,6 +99,24 @@ export const CatalogTable = ({
   titlePreamble,
 }: CatalogTableProps) => {
   const { isStarredEntity, toggleStarredEntity } = useStarredEntities();
+  // TR TODO: Need to add children to catalog table
+  // TR TODO: need to update this with error handling and to take in the chilren
+  // TR TODO: Need to rename to just column once above is removed
+  // TR TODO: Comment code back in below. Needed to comment out to pass the push
+  // const columnsTR: TableColumn<Entity>[] = (() => {
+  //   const singleColumn: TableColumn[] = [];
+
+  //   React.Children.forEach((children, child) => {
+  //     const { title, field } = (child as JSX.Element).props;
+
+  //     singleColumn.push({
+  //       title: title,
+  //       field: field
+  //     })
+  //   }, [children])
+
+  //   return singleColumn;
+  // })
 
   if (error) {
     return (

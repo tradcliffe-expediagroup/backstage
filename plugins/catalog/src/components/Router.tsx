@@ -25,6 +25,9 @@ import { EntityNotFound } from './EntityNotFound';
 import { EntityPageLayout } from './EntityPageLayout';
 import { EntityProvider } from './EntityProvider';
 
+// TR TODO: Need to add default catalog table header
+// TR TODO: Need to add Table to export const router
+
 const DefaultEntityPage = () => (
   <EntityPageLayout>
     <EntityPageLayout.Content

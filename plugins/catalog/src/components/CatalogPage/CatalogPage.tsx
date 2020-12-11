@@ -149,7 +149,7 @@ const CatalogPageContents = () => {
 
   const showAddExampleEntities =
     configApi.has('catalog.exampleEntityLocations') && isCatalogEmpty;
-
+  // TR TODO: need to add children to catalog table if following same pattern
   return (
     <CatalogLayout>
       <CatalogTabs
